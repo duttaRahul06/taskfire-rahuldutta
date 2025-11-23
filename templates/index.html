@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TaskFire — Simple To-Do (Firestore)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>TaskFire</h1>
+      <p class="subtitle">Your simple Firebase Firestore To‑Do</p>
+    </header>
+
+    <main>
+      <form id="taskForm" class="task-form" onsubmit="return false;">
+        <input id="taskInput" type="text" placeholder="Add a new task..." autocomplete="off" />
+        <button id="addBtn" class="primary">Add</button>
+      </form>
+
+      <ul id="tasksList" class="tasks-list"></ul>
+      <div id="empty" class="empty">No tasks yet — add your first task.</div>
+    </main>
+
+    <footer>
+      <small>Built with Firebase Firestore • Replace firebaseConfig in <code>app.js</code>.</small>
+    </footer>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Node / VSCode / OS
+node_modules/
+.env
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,20 @@
+
+:root{--bg:#0b1220;--card:#071026;--accent:#2563eb;--muted:#9aa7bd;--glass:rgba(255,255,255,0.02)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(180deg,#071023 0%, #041227 100%);font-family:Inter,system-ui,Arial;color:#e6eef8;display:flex;align-items:center;justify-content:center;padding:24px}
+.app{width:100%;max-width:760px;background:var(--card);padding:24px;border-radius:12px;box-shadow:0 10px 40px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+header h1{margin:0;font-size:28px}
+.subtitle{margin:6px 0 0;color:var(--muted)}
+.task-form{display:flex;gap:8px;margin:18px 0}
+.task-form input{flex:1;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;font-size:15px}
+button.primary{background:var(--accent);border:0;padding:10px 14px;border-radius:10px;color:white;font-weight:600;cursor:pointer}
+.tasks-list{list-style:none;padding:0;margin:0}
+.tasks-list li{display:flex;align-items:center;justify-content:space-between;padding:12px;border-radius:10px;margin-bottom:10px;border:1px dashed rgba(255,255,255,0.03)}
+.task-left{display:flex;align-items:center;gap:12px}
+.task-text{max-width:560px;word-break:break-word}
+.completed .task-text{text-decoration:line-through;opacity:0.6}
+.actions{display:flex;gap:8px}
+.icon-btn{background:transparent;border:0;color:var(--muted);cursor:pointer;padding:6px;border-radius:8px}
+.empty{text-align:center;padding:18px;color:var(--muted);margin-top:12px}
+footer{margin-top:10px;text-align:center;color:var(--muted)}
+code{background:rgba(255,255,255,0.02);padding:2px 6px;border-radius:6px}
